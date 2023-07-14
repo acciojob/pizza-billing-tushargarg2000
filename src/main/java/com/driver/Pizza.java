@@ -50,7 +50,7 @@ public class Pizza {
             //Cheese is not added
             totalPrice = totalPrice + cheesePrice;
             isCheeseAdded = true;
-            bill = bill + "Extra Cheese Added: "+cheesePrice;
+            bill = bill + "Extra Cheese Added: "+cheesePrice+"\n";
 
         }
         // your code goes here
@@ -61,7 +61,7 @@ public class Pizza {
         if(isToppingsAdded==false){
 
             totalPrice = totalPrice + toppingPrice;
-            bill = bill + "Extra Toppings Added: "+toppingPrice;
+            bill = bill + "Extra Toppings Added: "+toppingPrice+"\n";
             isToppingsAdded = true;
         }
     }
@@ -71,7 +71,7 @@ public class Pizza {
         if(!isPaperBagAdded){
             isPaperBagAdded = true;
             totalPrice = totalPrice + paperBagPrice;
-            bill = bill + "Paperbag Added: "+paperBagPrice;
+            bill = bill + "Paperbag Added: "+paperBagPrice+"\n";
         }
     }
 
@@ -79,7 +79,7 @@ public class Pizza {
         // your code goes here
         if(!isBillGenerated){
             isBillGenerated = true;
-            bill = bill + "Total Price: "+totalPrice;
+            bill = bill + "Total Price: "+totalPrice+"\n";
         }
         return this.bill;
     }
